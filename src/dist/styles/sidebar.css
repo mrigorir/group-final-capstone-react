@@ -3,6 +3,7 @@
 .sidebar {
   box-shadow: 10px 0 15px rgb(221, 219, 219);
   min-width: 300px;
+  min-height: 100vh;
 }
 
 .nav-item a,
@@ -13,6 +14,13 @@
 .nav-item a.active {
   background-color: #97bf11;
   color: white;
+}
+
+/* logo */
+
+.logo-size {
+  width: 300px;
+  height: 300px;
 }
 
 /* sidebar-modals */
@@ -61,10 +69,28 @@ span.badge {
   .reserve-text {
     font-size: 13px;
   }
+
+  .navsilla {
+    margin-top: 0;
+  }
+
+  .sidebar {
+    height: auto;
+  }
 }
 
 @media (min-width: 400px) and (max-width: 768px) {
   .reserve-text {
     font-size: 18px;
+  }
+
+  .navsilla {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .navsilla {
+    margin-top: 250px;
   }
 }

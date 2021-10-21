@@ -19,10 +19,10 @@ function App() {
         <>
           <Container fluid className="m-0 p-0">
             <Row>
-              <Col lg={2} md={3} xs={12}>
+              <Col lg={2} md={3} xs={12} className="">
                 <Sidebar />
               </Col>
-              <Col lg={10} md={9} xs={12}>
+              <Col lg={10} md={8} xs={12} className="">
                 <Route path="/reserve-form">
                   <Reserve />
                 </Route>

@@ -1,21 +1,21 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Image, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import logo from '../../dist/images/logo.svg';
+import logo from '../../dist/images/logo2.png';
 import { AddItem, DeleteItem } from './itemFeatures';
 import MyReservations from './reserveFeatures';
 
 const Sidebar = () => (
   <div
-    className="sidebar mw-25 vh-100 overflow-hidden d-flex flex-column justify-content-between border-right"
+    className="sidebar mw-25 d-flex flex-column overflow-hidden justify-content-md-between justify-content-sm-cetner border-right"
   >
     <div className="mt-3 p-0">
       <Link to="/" className="">
-        <Image src={logo} width="150" height="150" className="mx-auto w-100 border-3 border-bottom border-gray pb-2" />
+        <Image src={logo} className="mx-auto w-100 border-3 border-bottom border-gray pb-2 logo-size" />
       </Link>
       <div className="d-flex align-items-center justify-content-center p-0 m-0">
         <Nav
-          className="mt-12 d-flex flex-column text-uppercase fs-5 fw-bold text-justify"
+          className="mt-12 d-flex flex-column text-uppercase fs-5 fw-bold text-justify navsilla"
           defaultActiveKey="/"
         >
           <Nav.Item>
@@ -52,13 +52,13 @@ const Sidebar = () => (
       </div>
     </div>
     <div className="footer border-3 border-top border-gray">
-      <div className="me-sm-3 ms-sm-0 ms-md-4 d-flex justify-content-around align-items-center p-5 fs-2 fw-bold">
-        <FontAwesomeIcon icon={['fab', 'twitter']} className="ms-sm-3 me-md-5 text-lightblue" />
-        <FontAwesomeIcon icon={['fab', 'instagram']} className="ms-sm-3 me-md-5 text-pink" />
-        <FontAwesomeIcon icon={['fab', 'google']} className="ms-sm-3 me-md-5 text-success" />
-        <FontAwesomeIcon icon={['fab', 'facebook']} className="ms-sm-3 me-md-5 text-blue" />
+      <div className="d-flex justify-content-between align-items-center p-5 fs-2 fw-bold w-100">
+        <FontAwesomeIcon icon={['fab', 'twitter']} className="text-lightblue" />
+        <FontAwesomeIcon icon={['fab', 'instagram']} className="text-pink" />
+        <FontAwesomeIcon icon={['fab', 'google']} className="text-success" />
+        <FontAwesomeIcon icon={['fab', 'facebook']} className="text-blue" />
       </div>
-      <p className="text-secondary fw-bold fs-6 me-md-3">@copyright microverse capstone group</p>
+      <p className="text-secondary fw-bold fs-6 me-md-3 text-center">@copyright microverse capstone group</p>
     </div>
   </div>
 );
