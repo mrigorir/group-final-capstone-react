@@ -6,8 +6,9 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import './dist/styles/global.css';
 import './dist/styles/sidebar.css';
 import Sidebar from './components/sidebar/Sidebar';
-import Reserve from './components/Reserve';
-import Cars from './components/Cars';
+import Reserve from './components/reserve_form/Reserve';
+import Cars from './components/main_page/Cars';
+import CarDetails from './components/details_page/CarDetails';
 
 library.add(fas, fab);
 
@@ -24,6 +25,9 @@ function App() {
               <Col lg={10} md={9} xs={12}>
                 <Route path="/reserve-form">
                   <Reserve />
+                </Route>
+                <Route path="/car-details">
+                  <CarDetails />
                 </Route>
                 <Route exact path="/">
                   <Cars />

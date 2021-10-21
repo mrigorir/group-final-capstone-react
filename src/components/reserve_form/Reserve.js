@@ -3,7 +3,7 @@ import React from 'react';
 function Reserve() {
   return (
     <div>
-      Reserve!
+      This is the reserve page.
     </div>
   );
 }
