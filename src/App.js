@@ -6,8 +6,8 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import './dist/styles/global.css';
 import './dist/styles/sidebar.css';
 import Sidebar from './components/sidebar/Sidebar';
-import Cars from './components/Cars';
 import Reserve from './components/Reserve';
+import Cars from './components/Cars';
 
 library.add(fas, fab);
 
@@ -15,21 +15,23 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Container fluid className="m-0 p-0">
-          <Row>
-            <Col lg={2} md={3} xs={12} className="">
-              <Sidebar />
-            </Col>
-            <Col lg={10} md={9} xs={12} className="">
-              <Route path="/reserve-form">
-                <Reserve />
-              </Route>
-              <Route path="/home">
-                <Cars />
-              </Route>
-            </Col>
-          </Row>
-        </Container>
+        <>
+          <Container fluid className="m-0 p-0">
+            <Row>
+              <Col lg={2} md={3} xs={12}>
+                <Sidebar />
+              </Col>
+              <Col lg={10} md={9} xs={12}>
+                <Route path="/reserve-form">
+                  <Reserve />
+                </Route>
+                <Route exact path="/">
+                  <Cars />
+                </Route>
+              </Col>
+            </Row>
+          </Container>
+        </>
       </Switch>
     </Router>
   );
