@@ -7,13 +7,14 @@ import MyReservations from './reserveFeatures';
 
 const Sidebar = () => (
   <div
-    className="sidebar mw-25 d-flex flex-column overflow-hidden justify-content-md-between justify-content-sm-cetner border-right"
+    className="sidebar mw-25 d-flex flex-column overflow-hidden justify-content-md-between justify-content-xs-cetner border-right"
   >
     <div className="mt-3 p-0">
-      <Link to="/" className="">
+      <Link to="/" className="logo">
         <Image src={logo} className="mx-auto w-100 border-3 border-bottom border-gray pb-2 logo-size" />
       </Link>
-      <div className="d-flex align-items-center justify-content-center p-0 m-0">
+      <div className="d-xs-block d-md-none forehead" />
+      <div className="d-flex align-items-md-center justify-content-center p-0 m-0 position-relative background">
         <Nav
           className="mt-12 d-flex flex-column text-uppercase fs-5 fw-bold text-justify navsilla"
           defaultActiveKey="/"
@@ -50,6 +51,7 @@ const Sidebar = () => (
           </Nav.Item>
         </Nav>
       </div>
+      <div className="d-xs-block d-md-none forehead m-bottom" />
     </div>
     <div className="footer border-3 border-top border-gray">
       <div className="d-flex justify-content-between align-items-center p-5 fs-2 fw-bold w-100">
