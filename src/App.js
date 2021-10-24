@@ -5,6 +5,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import './dist/styles/global.css';
 import './dist/styles/sidebar.css';
+import './dist/styles/reservation_form.css';
 import Sidebar from './components/sidebar/Sidebar';
 import Reserve from './components/reserve_form/Reserve';
 import Cars from './components/main_page/Cars';

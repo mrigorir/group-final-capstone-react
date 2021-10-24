@@ -1,0 +1,64 @@
+.content-width {
+  max-width: 60%;
+  align-self: center;
+}
+
+input.reserve_input {
+  border-radius: 50px;
+}
+
+input.reserve_input:focus,
+select.reserve_input:focus {
+  outline: none;
+  box-shadow: none;
+  border: solid 3px #6C757D;
+}
+
+input.reserve_input[type="text"]::placeholder {
+  color: #6C757D;
+}
+
+@media (max-width:500px) {
+  .mobile-top {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .responsive-width {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+  .tablet-pos {
+    right: 0;
+    top: 30px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .tablet-pos {
+    top: 200px;
+    left: 125px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .background-reserve::before {
+    content: '';
+    background-color: rgb(186, 190, 189);
+    background-image: url("../images/bg-reserve2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+  }
+}
+
