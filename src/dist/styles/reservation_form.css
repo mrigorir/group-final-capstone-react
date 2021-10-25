@@ -11,14 +11,14 @@ input.reserve_input:focus,
 select.reserve_input:focus {
   outline: none;
   box-shadow: none;
-  border: solid 3px #6C757D;
+  border: solid 3px #6c757d;
 }
 
 input.reserve_input[type="text"]::placeholder {
-  color: #6C757D;
+  color: #6c757d;
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .mobile-top {
     margin-top: 100px;
   }
@@ -31,7 +31,7 @@ input.reserve_input[type="text"]::placeholder {
   }
 }
 
-@media (min-width:768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .tablet-pos {
     right: 0;
     top: 30px;
@@ -48,17 +48,16 @@ input.reserve_input[type="text"]::placeholder {
 @media (min-width: 1500px) {
   .background-reserve::before {
     content: '';
-    background-color: rgb(186, 190, 189);
+    background-color: rgb(189, 199, 196);
     background-image: url("../images/bg-reserve2.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
     opacity: 0.4;
   }
 }
-
