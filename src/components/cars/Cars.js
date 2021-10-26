@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Sidebar from '../sidebar/Sidebar';
 
-function CarDetails() {
+function Cars() {
   return (
     <Container fluid className="m-0 p-0">
       <Row>
@@ -10,11 +10,11 @@ function CarDetails() {
           <Sidebar />
         </Col>
         <Col lg={10} md={8} xs={12} className="p-0">
-          This the details page!
+          This the main page!
         </Col>
       </Row>
     </Container>
   );
 }
 
-export default CarDetails;
+export default Cars;

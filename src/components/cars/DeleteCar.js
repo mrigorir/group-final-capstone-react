@@ -1,8 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Sidebar from '../sidebar/Sidebar';
+import CarList from './CarList';
 
-function CarDetails() {
+function DeleteCar() {
   return (
     <Container fluid className="m-0 p-0">
       <Row>
@@ -10,11 +11,11 @@ function CarDetails() {
           <Sidebar />
         </Col>
         <Col lg={10} md={8} xs={12} className="p-0">
-          This the details page!
+          <CarList />
         </Col>
       </Row>
     </Container>
   );
 }
 
-export default CarDetails;
+export default DeleteCar;
