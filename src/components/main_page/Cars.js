@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCars } from '../../redux/cars/cars';
 import Car from './Car';
-import style from './Cars.module.css';
 
 const Cars = () => {
   const dispatch = useDispatch();
