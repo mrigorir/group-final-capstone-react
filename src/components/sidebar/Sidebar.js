@@ -2,8 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Image, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../dist/images/logo2.png';
-import { AddItem, DeleteItem } from './itemFeatures';
-import MyReservations from './reserveFeatures';
 
 const Sidebar = () => (
   <div
@@ -20,7 +18,7 @@ const Sidebar = () => (
           defaultActiveKey="/"
         >
           <Nav.Item>
-            <Nav.Link eventKey="1" as={Link} to="/" className="py-3">
+            <Nav.Link eventKey="1" as={Link} to="/cars" className="py-3">
               <FontAwesomeIcon icon={['fas', 'car']} className="me-3" />
               Cars
             </Nav.Link>
@@ -32,21 +30,21 @@ const Sidebar = () => (
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="">
-            <Nav.Link eventKey="3" as={Link} to="/reservation" className="py-3">
+            <Nav.Link eventKey="3" as={Link} to="/my-reservations" className="py-3">
               <FontAwesomeIcon icon={['fas', 'address-card']} className="me-3" />
-              <MyReservations />
+              My reservations
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="4" as={Link} to="/add-car" className="py-3">
               <FontAwesomeIcon icon={['fas', 'plus-square']} className="me-3" />
-              <AddItem />
+              Add Car
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="5" as={Link} to="/delete-car" className="py-3">
               <FontAwesomeIcon icon={['fas', 'minus-square']} className="me-3" />
-              <DeleteItem />
+              Delete Car
             </Nav.Link>
           </Nav.Item>
         </Nav>

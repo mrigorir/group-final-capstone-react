@@ -25,6 +25,10 @@ button.btn.btn-primary {
   width: 20%;
 }
 
+.text-green {
+  color: #546d04;
+}
+
 /* background-colors */
 
 .bg-green {

@@ -1,0 +1,36 @@
+@media (max-width: 500px) {
+  .width-view {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .font-size {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .list-pos {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .list-pos {
+    top: 100px;
+    left: 350px;
+  }
+
+  .font-size {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .width-view {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
