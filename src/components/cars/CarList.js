@@ -1,7 +1,6 @@
 import React from 'react';
 import Car from './Car';
 
-
 const CarList = () => (
   <div className="position-relative">
     <div className="carList-pos">

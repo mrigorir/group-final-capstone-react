@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Badge } from 'react-bootstrap';
 
-const  Car = () => {
+const Car = (props) => {
   const {
     name, imageUrl, /* eslint-disable-line react/prop-types */
   } = props;
@@ -19,6 +19,6 @@ const  Car = () => {
       </li>
     </>
   );
-}
+};
 
 export default Car;
