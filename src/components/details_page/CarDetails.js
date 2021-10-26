@@ -1,9 +1,13 @@
 import React from 'react';
+import getCars from '../../services/carAPIFeatures';
+import ImageGallery from 'react-image-gallery';
 
-function CarDetails() {
+function CarDetails(props) {
+  getCars();
+
   return (
     <div>
-      This is the details page.
+      <ImageGallery items={Images} />
     </div>
   );
 }
