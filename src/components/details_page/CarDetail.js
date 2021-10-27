@@ -1,7 +1,7 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import {
-  Badge, Container, Row, Col, Image, Card, ListGroup,
+  Badge, Container, Row, Col, Image, Card, ListGroup, Button,
 } from 'react-bootstrap';
 
 const CarDetail = (props) => {
@@ -12,16 +12,22 @@ const CarDetail = (props) => {
     <>
       <Container>
         <Row>
-          <Col xs={6} md={4}>
-            <Image src={image} fluid />
+          <Col sm={8}>
+            <Image src={image} ml-5 />
           </Col>
-          <Card style={{ width: '18rem' }}>
-            <Card.Header>Car Details</Card.Header>
-            <ListGroup variant="flush">
-              <ListGroup.Item>{id}</ListGroup.Item>
-              <ListGroup.Item>{name}</ListGroup.Item>
-            </ListGroup>
-          </Card>
+          <Col sm={4}>
+            <Card style={{ width: '18rem' }}>
+              <Card.Header>Car Details</Card.Header>
+              <ListGroup variant="flush">
+                <ListGroup.Item>{id}</ListGroup.Item>
+                <ListGroup.Item>{name}</ListGroup.Item>
+              </ListGroup>
+            </Card>
+          </Col>
+          <Link to="/reserve-form">
+            <Button className="btn">Reserve</Button>
+            {' '}
+          </Link>
         </Row>
       </Container>
     </>
