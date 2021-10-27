@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Container, Row, Col } from 'react-bootstrap';
+import {
+  Container, Row, Col, Card,
+} from 'react-bootstrap';
 import { getCars } from '../../redux/cars/cars';
 import Sidebar from '../sidebar/Sidebar';
 import Car from './Car';
+import CarCard from './CarCard';
 
 const Cars = () => {
   const dispatch = useDispatch();
@@ -25,20 +28,24 @@ const Cars = () => {
           <Sidebar />
         </Col>
         <Col lg={10} md={8} xs={12} className="p-0">
-          {cars.map((car) => (
-            <Car
-              id={car.id}
-              key={car.id}
-              name={car.name}
-              imageUrl={car.image_data}
-            />
-          ))}
+          <h1 className="text-center text-white bg-secondary p-3 mx-auto w-75 mt-5">Lastest Models of Car</h1>
+          <p className="text-center text-secondary mt-5 fs-4 shadow-sm mx-auto w-75 p-2"> Only here you can see all the lastest models and reserve the ones you like</p>
+          <div className="d-flex align-items-center justify-conent-between m-5 flex-wrap">
+            {cars.map((car, i) => (
+              <CarCard
+                id={car.id}
+                key={car.id}
+                name={car.name}
+                imageUrl={car.image_data}
+                index={i}
+              />
+            ))}
+          </div>
         </Col>
       </Row>
     </Container>
   );
 };
-
 export default Cars;
 
 // function Cars() {
@@ -57,3 +64,14 @@ export default Cars;
 // }
 
 // export default Cars;
+// const dispatch = useDispatch();
+// const cars = useSelector((state) => state.carsReducer.cars);
+
+// useEffect(() => {
+//   dispatch(getCars());
+// }, []);
+
+// if (cars.length === 0) {
+//   return (
+//     <h1>loading</h1>
+//   );

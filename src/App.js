@@ -9,6 +9,7 @@ import './dist/styles/signing.css';
 import './dist/styles/carForm.css';
 import './dist/styles/carDelete.css';
 import './dist/styles/reservationList.css';
+import './dist/styles/carsCards.css';
 import Reserve from './components/reserve_form/Reserve';
 import Cars from './components/cars/Cars';
 import CarDetails from './components/details_page/CarDetails';
