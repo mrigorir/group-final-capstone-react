@@ -1,22 +1,29 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Badge } from 'react-bootstrap';
+import {
+  Badge, Container, Row, Col, Image, Card, ListGroup,
+} from 'react-bootstrap';
 
 const CarDetail = (props) => {
   const {
-    name, imageUrl, /* eslint-disable-line react/prop-types */
+    name, image, id, /* eslint-disable-line react/prop-types */
   } = props;
   return (
     <>
-      <li className="d-flex my-3 align-items-center justify-content-between border border-gray shadow p-3 rounded">
-        <div>
-          <img className="car-img mx-3" src={imageUrl} alt="" />
-          {name}
-        </div>
-        <Badge bg="success" className="py-2">
-          <FontAwesomeIcon icon={['fas', 'trash-alt']} className="text-white fs-4" />
-        </Badge>
-      </li>
+      <Container>
+        <Row>
+          <Col xs={6} md={4}>
+            <Image src={image} fluid />
+          </Col>
+          <Card style={{ width: '18rem' }}>
+            <Card.Header>Car Details</Card.Header>
+            <ListGroup variant="flush">
+              <ListGroup.Item>{id}</ListGroup.Item>
+              <ListGroup.Item>{name}</ListGroup.Item>
+            </ListGroup>
+          </Card>
+        </Row>
+      </Container>
     </>
   );
 };

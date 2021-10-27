@@ -6,9 +6,6 @@ const hooks = () => {
   const dispatch = useDispatch();
   const car = useSelector((state) => state.car);
   useEffect(() => {
-    // if (!car.length) {
-    //   getCarAction();
-    // }
     dispatch(getCarAction());
   }, []);
 };
