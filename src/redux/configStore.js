@@ -2,7 +2,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import carsReducer from './cars/cars';
-import { carReducer } from './carDetails';
+import carReducer from './carDetails';
 
 const reducer = combineReducers({
   cars: carsReducer,
