@@ -14,6 +14,7 @@ const CarDetails = () => {
   // );
   const car = useSelector((state) => state.car);
   hooks();
+  console.log(car);
   return (
     <table className="table table-bordered table-striped table-responsive border-secondary my-5">
       <thead>
