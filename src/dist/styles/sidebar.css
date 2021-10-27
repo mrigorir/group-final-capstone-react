@@ -25,32 +25,6 @@
 
 /* sidebar-modals */
 
-.text-green,
-input[type="text"]::placeholder {
-  color: #617e04;
-}
-
-#addItemModal,
-#deleteItemModal,
-#myReservationsModal {
-  background-color: transparent;
-  color: #333;
-  border: none;
-  outline: none;
-  font-weight: bold;
-  font-size: 20px;
-  text-transform: uppercase;
-  padding: 0;
-}
-
-#addItemModal:focus,
-#deleteItemModal:focus,
-#myReservationsModal:focus {
-  outline: none;
-  box-shadow: none;
-  border: none;
-}
-
 span.badge {
   cursor: pointer;
 }
@@ -77,6 +51,7 @@ span.badge {
 
   .background::before {
     content: '';
+    background-color: rgb(189, 199, 196);
     background-image: url("../images/logo2.png");
     background-position: center center;
     background-repeat: no-repeat;
