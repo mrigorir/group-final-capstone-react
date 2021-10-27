@@ -13,11 +13,16 @@ This app is designed follwing a real world senerio with given designs, and we ha
 [![View Code](https://img.shields.io/badge/View%20-Code-green)](https://github.com/mrigorir/group-final-capstone-react)
 [![Github Issues](https://img.shields.io/badge/Github%20-Issues-red)](https://github.com/mrigorir/group-final-capstone-react/issues)
 [![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/errea/Hello-world-rails-react/pull/1)
-[![Backend API Repo](https://img.shields.io/badge/Backend-API%50Repo-purple)](https://github.com/ccobasi/group-final-capstone)
+[![Backend API Repo](https://img.shields.io/badge/Backend-API%20Repo-purple)](https://github.com/ccobasi/group-final-capstone)
 [![API DOCS](https://img.shields.io/badge/API-Documentation%50-yellow)]()
 
 </div>
 
+<p align="center">
+<a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#gs">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#author">Authors</a>
+</p>
 
 
 ># Project requirements
@@ -66,12 +71,6 @@ Make sure that the "Add item" and "Delete item" links are accessible only by use
 
 ## 📝 Contents
  
-<p align="center">
-<a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#gs">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#author">Authors</a>
-</p>
-
 ## 🔧 Built with<a name = "with"></a>
 
 
