@@ -18,7 +18,7 @@ const showDeletableCars = async () => {
 
 
 const showDetailCars = async () => {
-  const response = await axios.get(url/ '${id}');
+  const response = await axios.get(url/ `${id}`);
   const { data } = response;
   const detailCarsList = [];
   data.map((data) => detailCarsList.push(
