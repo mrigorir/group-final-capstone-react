@@ -1,20 +1,25 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import Sidebar from '../sidebar/Sidebar';
+import { useSelector } from 'react-redux';
+import hooks from '../hooks/hooks';
+import CarDetail from './CarDetail';
 
-function CarDetails() {
+const CarDetails = () => {
+  const car = useSelector((state) => state.car);
+  hooks();
   return (
-    <Container fluid className="m-0 p-0">
-      <Row>
-        <Col lg={2} md={3} xs={12} className="p-0">
-          <Sidebar />
-        </Col>
-        <Col lg={10} md={8} xs={12} className="p-0">
-          This the details page!
-        </Col>
-      </Row>
-    </Container>
+    <table className="table table-bordered table-striped table-responsive border-secondary my-5">
+      <tbody>
+        {car.map((car) => (
+          <CarDetail
+            key={car.id}
+            id={car.id}
+            name={car.name}
+            image={car.image}
+          />
+        ))}
+      </tbody>
+    </table>
   );
-}
+};
 
 export default CarDetails;

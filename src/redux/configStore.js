@@ -2,11 +2,13 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import carsReducer from './cars/cars';
+import carReducer from './carDetails';
 import userAuthenticationReducer from './users/authentication';
 import { LOGOUT_USER } from './users/actionTypes';
 
 const appReducer = combineReducers({
   carsReducer,
+  car: carReducer,
   userCredentials: userAuthenticationReducer,
 });
 
