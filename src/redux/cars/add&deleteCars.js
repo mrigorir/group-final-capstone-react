@@ -46,17 +46,20 @@ const removeCarAction = (id) => async (dispatch) => {
 };
 
 const detailCarAction = (id) => async (dispatch) => {
-  await detailCar(id);
+  const carSpecs = await detailCar(id);
 
   dispatch({
     type: DETAIL_CAR,
-    payload: id,
+    payload: carSpecs,
   });
 };
+
 
 const addDeleteCarsReducer = (state = [], action) => {
   switch (action.type) {
     case GET_DELETABLE_CARS_LIST:
+      return [...action.payload];
+    case GET_DETAIL_CARS_LIST:
       return [...action.payload];
     case CREATE_CAR:
       return [...state, action.payload];
@@ -68,5 +71,5 @@ const addDeleteCarsReducer = (state = [], action) => {
 };
 
 export {
-  getDeletableCarsList, addDeleteCarsReducer, addCarAction, removeCarAction, getDetailCarsList
+  getDeletableCarsList, addDeleteCarsReducer, addCarAction, removeCarAction, getDetailCarsList, detailCarAction
 };
