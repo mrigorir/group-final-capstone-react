@@ -20,10 +20,10 @@ const CarCard = ({
         </Card.Title>
         <p className="text-center text-secondary fs-5 p-2">jsjsjscjsncjscnjscn</p>
         <div className="d-flex justify-content-between align-items-center p-1 fs-2 fw-bold w-100 pb-3">
-          <FontAwesomeIcon icon={['fab', 'twitter']} className="text-dark" />
-          <FontAwesomeIcon icon={['fab', 'instagram']} className="text-dark" />
-          <FontAwesomeIcon icon={['fab', 'google']} className="text-dark" />
-          <FontAwesomeIcon icon={['fab', 'facebook']} className="text-dark" />
+          <FontAwesomeIcon icon={['fab', 'twitter']} className="text-dark cursor-pointer" />
+          <FontAwesomeIcon icon={['fab', 'instagram']} className="text-dark cursor-pointer" />
+          <FontAwesomeIcon icon={['fab', 'google']} className="text-dark cursor-pointer" />
+          <FontAwesomeIcon icon={['fab', 'facebook']} className="text-dark cursor-pointer" />
         </div>
       </Card.Footer>
     </Card>

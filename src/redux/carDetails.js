@@ -1,4 +1,4 @@
-import getCars from '../services/carAPIFeatures';
+import { getCars } from '../services/carAPIFeatures';
 
 const GET_CAR = 'CarStore/cars/GET_CAR';
 
