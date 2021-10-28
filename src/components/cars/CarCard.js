@@ -1,14 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useDispatch } from 'react-redux';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'react-bootstrap';
+import showDetailCars from '../../services/carAPIFeatures'
 // import logo from '../../dist/images/bg-reserve2.png';
 
+const dispatch = useDispatch();
 const CarCard = ({
   index, id, key, name, imageUrl,
 }) => (
   <>
-    <Card id={id} key={key} className=" border-0 rounded m-5" style={{ width: '20rem' }}>
+    <Card id={id} key={key} className=" border-0 rounded m-5" style={{ width: '20rem' }} onClick={() => dispatch(showDetailCars(id))}>
       <Card.Body className={`background-${index} m-2`} style={{ borderRadius: '100%' }}>
         <Card.Img variant="top" src={imageUrl} />
       </Card.Body>
