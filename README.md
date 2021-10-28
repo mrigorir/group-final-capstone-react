@@ -14,10 +14,10 @@
 
  - React-router-dom.
 
- - [OpenWeahter](https://morning-chamber-68237.herokuapp.com/) API features.
+ - [Rails](https://morning-chamber-68237.herokuapp.com/) API features.
 
 ## Image Preview
-![Screenshot Main Page](./src/dist/images/bg-reserve2.png);
+![Screenshot Main Page](./src/dist/images/bg-reserve2.png)
 
 ## :star: [Live Demo](https://suspicious-hopper-79efb3.netlify.app/) :star:
 
