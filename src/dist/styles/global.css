@@ -8,6 +8,10 @@
   font-family: 'Nunito', sans-serif;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .mt-12 {
   margin-top: 150px;
 }
@@ -21,14 +25,6 @@ button.btn.btn-primary {
   border: #97bf11;
 }
 
-.btn {
-  background-color: #94b134;
-  border: #97bf11;
-  border-radius: 30px !important;
-  width: 25% !important;
-  margin-left: 750px;
-}
-
 .w-20 {
   width: 20%;
 }
@@ -37,10 +33,15 @@ button.btn.btn-primary {
   color: #546d04;
 }
 
+span.badge.remove {
+  cursor: pointer;
+}
+
 /* background-colors */
 
-.bg-green {
-  background-color: #97bf11;
+.bg-green,
+span.badge.carname.bg-success {
+  background-color: #97bf11 !important;
 }
 
 /* borders-colors */
