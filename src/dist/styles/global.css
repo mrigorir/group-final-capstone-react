@@ -29,10 +29,15 @@ button.btn.btn-primary {
   color: #546d04;
 }
 
+span.badge.remove {
+  cursor: pointer;
+}
+
 /* background-colors */
 
-.bg-green {
-  background-color: #97bf11;
+.bg-green,
+span.badge.carname.bg-success {
+  background-color: #97bf11 !important;
 }
 
 /* borders-colors */
