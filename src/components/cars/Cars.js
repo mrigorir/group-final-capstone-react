@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import {
   Container, Row, Col,
 } from 'react-bootstrap';
@@ -31,6 +32,7 @@ const Cars = () => {
           <p className="text-center text-secondary mt-5 fs-4 shadow-sm mx-auto w-75 p-2"> Only here you can see all the lastest models and reserve the ones you like</p>
           <div className="d-flex align-items-center justify-conent-between m-5 flex-wrap">
             {cars.map((car, i) => (
+              <Link to='/car-details'>
               <CarCard
                 id={car.id}
                 key={car.id}
@@ -38,6 +40,7 @@ const Cars = () => {
                 imageUrl={car.image_data}
                 index={i}
               />
+              </Link>
             ))}
           </div>
         </Col>
