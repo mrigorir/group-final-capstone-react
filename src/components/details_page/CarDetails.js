@@ -3,8 +3,10 @@ import { useSelector } from 'react-redux';
 import hooks from '../hooks/hooks';
 import CarDetail from './CarDetail';
 
+
 const CarDetails = () => {
-  const car = useSelector((state) => state.car);
+  const car = useSelector((state) => state.addDeleteCarReducer); 
+
   hooks();
   return (
     <table className="table table-bordered table-striped table-responsive border-secondary my-5">
