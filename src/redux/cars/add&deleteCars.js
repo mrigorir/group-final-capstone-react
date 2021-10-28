@@ -1,6 +1,7 @@
 import { showDeletableCars, createCar, removeCar } from '../../services/carAPIFeatures';
 
 const GET_DELETABLE_CARS_LIST = 'CarsShow/cars/GET_DELETABLE_CARS_LIST';
+const GET_DETAIL_CARS_LIST = 'CarsShow/cars/GET_DETAIL_CARS_LIST';
 const CREATE_CAR = 'CarsShow/cars/CREATE_CAR';
 const DELETE_CAR = 'CarShow/cars/DELETE_CAR';
 
@@ -9,6 +10,15 @@ const getDeletableCarsList = () => async (dispatch) => {
   dispatch({
     type: GET_DELETABLE_CARS_LIST,
     payload: deletableCarsList,
+  });
+};
+
+
+const getDetailCarsList = () => async (dispatch) => {
+  const detailCarsList = await showDetailCars();
+  dispatch({
+    type: GET_DETAIL_CARS_LIST,
+    payload: detailCarsList,
   });
 };
 
@@ -35,6 +45,15 @@ const removeCarAction = (id) => async (dispatch) => {
   });
 };
 
+const detailCarAction = (id) => async (dispatch) => {
+  await detailCar(id);
+
+  dispatch({
+    type: DETAIL_CAR,
+    payload: id,
+  });
+};
+
 const addDeleteCarsReducer = (state = [], action) => {
   switch (action.type) {
     case GET_DELETABLE_CARS_LIST:
@@ -49,5 +68,5 @@ const addDeleteCarsReducer = (state = [], action) => {
 };
 
 export {
-  getDeletableCarsList, addDeleteCarsReducer, addCarAction, removeCarAction,
+  getDeletableCarsList, addDeleteCarsReducer, addCarAction, removeCarAction, getDetailCarsList
 };
