@@ -74,8 +74,13 @@ const SignupForm = (props) => {
         <Button variant="primary" type="submit" className="me-3 fs">
           Register
         </Button>
-        <Link to="/sign-in" className="btn btn-dark mx-3 fs">
+        <Link to="/signin" className="btn btn-dark mx-3 fs">
           Log in!
+        </Link>
+      </div>
+      <div className="text-center">
+        <Link to="/" className="text-danger">
+            &nbsp; Back home
         </Link>
       </div>
     </Form>
