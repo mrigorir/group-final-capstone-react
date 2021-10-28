@@ -19,7 +19,7 @@
 ## Image Preview
 ![Screenshot Main Page](./src/dist/images/bg-reserve2.png)
 
-## :star: [Live Demo](https://suspicious-hopper-79efb3.netlify.app/) :star:
+## :star: [Live Demo](https://loving-curran-adbfe4.netlify.app/) :star:
 
 ## Getting Started
 
