@@ -25,6 +25,13 @@ This app is designed follwing a real world senerio with given designs, and we ha
 <a href="#author">Authors</a>
 </p>
 
+# Rails Live API
+
+## :star: [here](https://morning-chamber-68237.herokuapp.com/) :star:
+
+# React Live Site 
+
+## :star: [here](https://loving-curran-adbfe4.netlify.app/) :star:
 
 ># Project requirements
   ## Basics
