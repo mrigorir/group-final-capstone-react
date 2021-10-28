@@ -8,6 +8,10 @@
   font-family: 'Nunito', sans-serif;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .mt-12 {
   margin-top: 150px;
 }

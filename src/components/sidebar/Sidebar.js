@@ -5,7 +5,7 @@ import logo from '../../dist/images/logo2.png';
 
 const Sidebar = () => (
   <div
-    className="sidebar mw-25 d-flex flex-column overflow-hidden justify-content-md-between justify-content-xs-cetner border-right"
+    className="h-100 sidebar mw-25 d-flex flex-column overflow-hidden justify-content-md-between justify-content-xs-cetner border-right"
   >
     <div className="mt-3 p-0">
       <Link to="/" className="logo">

@@ -22,7 +22,7 @@ function ReserveForm() {
           <ReserveCarList />
         </Form.Select>
       </Form.Group>
-      <Button variant="dark" type="submit" className="fs-4 w-20 responsive-width">
+      <Button variant="dark" type="submit" className="fs-4 w-20 responsive-width mb-3">
         Submit
       </Button>
     </Form>

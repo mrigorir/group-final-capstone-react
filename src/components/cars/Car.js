@@ -11,8 +11,8 @@ const Car = ({ id, name, image }) => {
     <>
       <li className="d-flex align-items-center justify-content-between border border-gray shadow p-2 my-3 rounded">
         <div>
-          <Image src={image} alt="car" className="mx-3" width="120" />
-          <Badge className="fs-4 ms-3 carname bg-success">
+          <Image src={image} alt="car" className="ms-3 me-5" width="120" height="80" />
+          <Badge className="fs-4 mx-3 carname bg-success mt-3 mt-sm-4">
             {name}
           </Badge>
         </div>
