@@ -47,6 +47,12 @@ const Sidebar = () => (
               Delete Car
             </Nav.Link>
           </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="1" as={Link} to="/signout" className="py-3">
+              <FontAwesomeIcon icon={['fas', 'car']} className="me-3" />
+              Logout
+            </Nav.Link>
+          </Nav.Item>
         </Nav>
       </div>
       <div className="d-xs-block d-md-none forehead m-bottom" />
