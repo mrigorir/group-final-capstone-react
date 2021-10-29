@@ -87,13 +87,13 @@ To make sure the linters' checks using Github Actions work properly, you should 
 👤 **Chuckwuma Obasi**
 - Github: [@ccobasi](https://github.com/ccobasi/)
 - Twitter: [@Obasichux](https://twitter.com/obasichux)
-- Linkedin: [linkedin](https://www.linkedin.com/in/chukwuma-obasi/)
+- Linkedin: [Chukwuma Obasi](https://www.linkedin.com/in/chukwuma-obasi/)
 
 👨‍💻 **Jocyline Magero**
 
 - Github: [@jmagero](https://github.com/Jmagero)
 - Twitter: [@MagzCelyn](https://twitter.com/magero_jocyline)
-- Linkedin: [Chukwuma Obasi](https://www.linkedin.com/in/jocyline-magero)
+- Linkedin: [linkedin](https://www.linkedin.com/in/jocyline-magero)
 
 👩‍💻 **Ijay Abby**
 
