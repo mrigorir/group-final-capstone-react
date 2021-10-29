@@ -16,9 +16,8 @@ const showDeletableCars = async () => {
   return deletableCarsList;
 };
 
-
 const showDetailCars = async () => {
-  const response = await axios.get(url/ `${id}`);
+  const response = await axios.get(url);
   const { data } = response;
   const detailCarsList = [];
   data.map((data) => detailCarsList.push(
@@ -43,7 +42,7 @@ const removeCar = async (id) => {
 };
 
 const getCars = async () => {
-  const response = await axios.get('https://morning-chamber-68237.herokuapp.com/api/v1/cars/${id}');
+  const response = await axios.get('https://morning-chamber-68237.herokuapp.com/api/v1/cars/21');
   const { data } = await response;
   const cars = [];
   cars.push({
@@ -56,5 +55,5 @@ const getCars = async () => {
 };
 
 export {
-  showDeletableCars, createCar, removeCar, getCars, showDetailCars
+  showDeletableCars, createCar, removeCar, getCars, showDetailCars,
 };

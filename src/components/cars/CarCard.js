@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'react-bootstrap';
-import showDetailCars from '../../services/carAPIFeatures'
+import showDetailCars from '../../services/carAPIFeatures';
 // import logo from '../../dist/images/bg-reserve2.png';
 
 const dispatch = useDispatch();

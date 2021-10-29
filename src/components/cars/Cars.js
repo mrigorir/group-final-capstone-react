@@ -31,17 +31,17 @@ const Cars = () => {
           <h1 className="text-center text-white bg-secondary p-3 mx-auto w-75 mt-5">Lastest Models of Car</h1>
           <p className="text-center text-secondary mt-5 fs-4 shadow-sm mx-auto w-75 p-2"> Only here you can see all the lastest models and reserve the ones you like</p>
           <div className="d-flex align-items-center justify-conent-between m-5 flex-wrap">
-            {cars.map((car, i) => (
-              <Link to='/car-details'>
-              <CarCard
-                id={car.id}
-                key={car.id}
-                name={car.name}
-                imageUrl={car.image_data}
-                index={i}
-              />
+            {/* {cars.map((car, i) => (
+              <Link to="/car-details">
+                <CarCard
+                  id={car.id}
+                  key={car.id}
+                  name={car.name}
+                  imageUrl={car.image_data}
+                  index={i}
+                />
               </Link>
-            ))}
+            ))} */}
           </div>
         </Col>
       </Row>
