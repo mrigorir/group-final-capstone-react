@@ -3,9 +3,8 @@ import { useSelector } from 'react-redux';
 import hooks from '../hooks/hooks';
 import CarDetail from './CarDetail';
 
-
 const CarDetails = () => {
-  const car = useSelector((state) => state.addDeleteCarReducer); 
+  const car = useSelector((state) => state.addDeleteCarReducer);
 
   hooks();
   return (
