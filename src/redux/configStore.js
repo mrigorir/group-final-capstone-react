@@ -3,14 +3,14 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import carsReducer from './cars/cars';
 import { addDeleteCarsReducer } from './cars/add&deleteCars';
-import carReducer from './carDetails';
+import { carDetailsReducer } from './cars/detailedCar';
 import userAuthenticationReducer from './users/authentication';
 import { LOGOUT_USER } from './users/actionTypes';
 
 const appReducer = combineReducers({
   carsReducer,
   addDeleteCarsReducer,
-  car: carReducer,
+  carDetailsReducer,
   userCredentials: userAuthenticationReducer,
 });
 

@@ -48,7 +48,7 @@ const Sidebar = () => (
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="1" as={Link} to="/signout" className="py-3">
+            <Nav.Link eventKey="6" as={Link} to="/signout" className="py-3">
               <FontAwesomeIcon icon={['fas', 'car']} className="me-3" />
               Logout
             </Nav.Link>

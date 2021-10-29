@@ -6,7 +6,7 @@ import LockOpenIcon from '@material-ui/icons/LockOpen';
 import TransitEnterexitIcon from '@material-ui/icons/TransitEnterexit';
 
 export const MenuBarData = [
-  {
+  /* {
     id: 'gsr-home',
     title: 'Home',
     path: '/home',
@@ -19,7 +19,7 @@ export const MenuBarData = [
     path: '/Cars',
     icon: <LocalActivityIcon />,
     cssClassName: 'nav-text',
-  },
+  }, */
   {
     id: 'gsr-reservations',
     title: 'Reservations',
@@ -44,7 +44,7 @@ export const UNAUTHENTICATED_LINKS = [
     icon: <TransitEnterexitIcon />,
     cssClassName: 'nav-text',
   },
-  {
+  /* {
     id: 'gsr-home',
     title: 'Home',
     icon: <HomeIcon />,
@@ -57,5 +57,5 @@ export const UNAUTHENTICATED_LINKS = [
     icon: <LocalActivityIcon />,
     path: '/activities',
     cssClassName: 'nav-text',
-  },
+  }, */
 ];

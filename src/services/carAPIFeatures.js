@@ -27,19 +27,21 @@ const removeCar = async (id) => {
   return response.data;
 };
 
-const getCars = async () => {
-  const response = await axios.get('https://morning-chamber-68237.herokuapp.com/api/v1/cars/21');
+const getCar = async (id) => {
+  const getCarURL = `https://morning-chamber-68237.herokuapp.com/api/v1/cars/${id}`;
+  const response = await axios.get(getCarURL);
   const { data } = await response;
-  const cars = [];
-  cars.push({
-    id: data.id,
-    name: data.name,
-    image: data.image_data,
-  });
-
-  return cars;
+  const car = [];
+  car.push(
+    {
+      id: data.id,
+      name: data.name,
+      image: data.image_data,
+    },
+  );
+  return car;
 };
 
 export {
-  showDeletableCars, createCar, removeCar, getCars,
+  showDeletableCars, createCar, removeCar, getCar,
 };
