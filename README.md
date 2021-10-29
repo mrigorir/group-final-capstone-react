@@ -31,7 +31,7 @@ This app is designed follwing a real world senerio with given designs, and we ha
 
 # React Live Site 
 
-## :star: [here](https://loving-curran-adbfe4.netlify.app/) :star:
+## :star: [here](https://agitated-mcnulty-572592.netlify.app/) :star:
 
 ># Project requirements
   ## Basics
