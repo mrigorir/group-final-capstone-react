@@ -1,0 +1,54 @@
+input.carFormInputs:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.opacity-1 {
+  margin-top: 30px;
+}
+
+.opacity-1,
+.opacity-0 {
+  transition: all ease-in-out 1s;
+}
+
+@media (max-width: 500px) {
+  .carForm {
+    width: 80%;
+  }
+
+  h1.carFormTitle {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form-pos {
+    position: absolute;
+    top: 50px;
+    left: 160px;
+  }
+
+  h1.carFormTitle {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .form-pos {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+  }
+}
+
+@media (min-width: 1500px) {
+  h1.carFormTitle {
+    width: 70%;
+  }
+
+  .carForm {
+    width: 60%;
+  }
+}

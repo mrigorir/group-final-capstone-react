@@ -1,14 +1,23 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import './dist/styles/global.css';
 import './dist/styles/sidebar.css';
-import Sidebar from './components/sidebar/Sidebar';
+import './dist/styles/reservation_form.css';
+import './dist/styles/signing.css';
+import './dist/styles/carForm.css';
+import './dist/styles/carDelete.css';
+import './dist/styles/reservationList.css';
 import Reserve from './components/reserve_form/Reserve';
-import Cars from './components/main_page/Cars';
+import Cars from './components/cars/Cars';
 import CarDetails from './components/details_page/CarDetails';
+import Login from './components/login/Login';
+import Signup from './components/signup/Signup';
+import LogOut from './components/Menu/Logout';
+import MyReservations from './components/reservations/Myreservations';
+import AddCar from './components/cars/AddCar';
+import DeleteCar from './components/cars/DeleteCar';
 
 library.add(fas, fab);
 
@@ -16,26 +25,16 @@ function App() {
   return (
     <Router>
       <Switch>
-        <>
-          <Container fluid className="m-0 p-0">
-            <Row>
-              <Col lg={2} md={3} xs={12} className="">
-                <Sidebar />
-              </Col>
-              <Col lg={10} md={8} xs={12} className="">
-                <Route path="/reserve-form">
-                  <Reserve />
-                </Route>
-                <Route path="/car-details">
-                  <CarDetails />
-                </Route>
-                <Route exact path="/">
-                  <Cars />
-                </Route>
-              </Col>
-            </Row>
-          </Container>
-        </>
+        <Route exact path="/" component={Login} />
+        <Route path="/signin" component={Login} />
+        <Route path="/sign-up" component={Signup} />
+        <Route path="/signout" component={LogOut} />
+        <Route path="/reserve-form" component={Reserve} />
+        <Route path="/car-details" component={CarDetails} />
+        <Route path="/cars" component={Cars} />
+        <Route path="/my-reservations" component={MyReservations} />
+        <Route path="/add-car" component={AddCar} />
+        <Route path="/delete-car" component={DeleteCar} />
       </Switch>
     </Router>
   );
