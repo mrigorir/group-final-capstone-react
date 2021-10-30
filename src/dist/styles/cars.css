@@ -1,0 +1,33 @@
+@media (max-width: 500px) {
+  .cars {
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .view {
+    position: absolute;
+    top: 0;
+    left: 100px;
+  }
+
+  .cars {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .cars {
+    position: absolute;
+    left: 140px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .cars {
+    position: absolute;
+    left: 150px;
+    width: 300px;
+  }
+}

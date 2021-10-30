@@ -12,6 +12,7 @@ function AddCar() {
   const carImageRef = useRef();
   const [carName, setCarName] = useState('');
   const [carImage, setCarImage] = useState('');
+  const [show, setShow] = useState('opacity-0');
 
   const handleValues = () => {
     setCarImage(carImageRef.current.value);
@@ -26,6 +27,10 @@ function AddCar() {
     dispatch(addCarAction(carName, carImage));
     setCarName('');
     setCarImage('');
+    setShow('opacity-1');
+    setTimeout(() => {
+      setShow('opacity-0');
+    }, 2500);
   };
 
   return (
@@ -38,8 +43,11 @@ function AddCar() {
           <Col lg={10} md={8} xs={12} className="p-0 position-relative">
             <div className="form-pos">
               <h1 className="text-center text-uppercase text-white fw-bold bg-secondary p-3 mx-auto mt-5 carFormTitle">Add a new car</h1>
+              <p className={`text-center fs-4 fw-bold bg-success border border-sucesss border-3 rounded shadow-sm mx-auto w-50 p-3 text-white ${show}`}>
+                A new car has been addded!
+              </p>
               <Form
-                className="mx-auto shadow-lg border border-secondary border-2 rounded p-5 my-5 carForm"
+                className="mx-auto shadow-lg border border-secondary border-2 rounded p-5 mb-5 carForm"
                 onSubmit={handleSubmit}
               >
                 <Form.Group className="mb-4" controlId="carName">
